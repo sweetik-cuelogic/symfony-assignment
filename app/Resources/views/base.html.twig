@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <meta name="description" content="Description about the project goes here">
+	    <meta name="viewport" content="width=device-width">
+
+	    <title>{% block title %}Welcome! To New Project{% endblock %}</title>
+		{% block stylesheets %}{% endblock %}
+	    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+            <style>
+		div.container {
+		    width: 100%;
+		    border: 1px solid gray;
+		}
+
+		header {
+		    padding: 1em;
+		    color: white;
+		    background-color: black;
+		    clear: left;
+		    text-align: center;
+		}
+		footer{
+
+		    position:fixed;
+		    height:100px;
+		    background-color:black;
+		    bottom:0px;
+		    left:0px;
+		    right:0px;
+		    margin-bottom:0px;
+		    text-align: center;
+		    color: white;
+		}
+		content {
+		     color:red;
+		     text-align: center;
+		}
+	   </style>
+	</head>
+        <body>
+		<div class="container">
+
+		<header>
+		   <h1>Hello World Page</h1>
+		</header>
+		<div class="content">
+			{% block body %}{% endblock %}
+			{% block javascripts %}{% endblock %}
+		</div>
+		<footer>Cuelogic.co.in</footer>
+
+		</div>
+	</body>
+</html>
