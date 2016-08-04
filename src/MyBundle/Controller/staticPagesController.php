@@ -12,17 +12,17 @@ class staticPagesController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('MyBundle:Default:index.html.twig', array(
+        return $this->render('MyBundle:Default:index.html.twig', array('title'=>"Home Page"
             // ...
         ));
     }
 
     /**
-     * @Route("/aboutUs")
+     * @Route("/aboutus")
      */
-    public function aboutUsAction()
+    public function aboutusAction()
     {
-        return $this->render('MyBundle:staticPages:about_us.html.twig', array(
+        return $this->render('MyBundle:staticPages:about_us.html.twig', array('title'=>"About Us Page"
             // ...
         ));
     }
@@ -32,7 +32,7 @@ class staticPagesController extends Controller
      */
     public function careerAction()
     {
-        return $this->render('MyBundle:staticPages:career.html.twig', array(
+        return $this->render('MyBundle:staticPages:career.html.twig', array('title'=>"Career Page"
             // ...
         ));
     }
@@ -42,17 +42,17 @@ class staticPagesController extends Controller
      */
     public function clientsAction()
     {
-        return $this->render('MyBundle:staticPages:clients.html.twig', array(
+        return $this->render('MyBundle:staticPages:clients.html.twig', array('title'=>"Clients Page"
             // ...
         ));
     }
 
     /**
-     * @Route("/toc")
+     * @Route("/terms")
      */
-    public function tocAction()
+    public function termsAction()
     {
-        return $this->render('MyBundle:staticPages:toc.html.twig', array(
+        return $this->render('MyBundle:staticPages:toc.html.twig', array('title'=>"T&C Page"
             // ...
         ));
     }

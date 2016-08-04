@@ -6,7 +6,7 @@
 	    <meta name="description" content="Description about the project goes here">
 	    <meta name="viewport" content="width=device-width">
 
-	    <title>{% block title %}Welcome! To New Project{% endblock %}</title>
+	    <title>{% block title %}{{ title }}{% endblock %}</title>
 		{% block stylesheets %}{% endblock %}
 	    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
             <style>
@@ -71,16 +71,19 @@ li a:hover {
 		<header>
 		   <h1>Hello World Page</h1>
 		   <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#career">Career</a></li>
-  <li><a href="#about">About Us</a></li>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/career">Career</a></li>
+  <li><a href="/aboutus">About Us</a></li>
+  <li><a href="/clients">Clients</a></li>
 </ul>
 		</header>
 		<div class="content">
 			{% block body %}{% endblock %}
 			{% block javascripts %}{% endblock %}
 		</div>
-		<footer><a href="http://www.cuelogic.com" target="_blank">Cuelogic.co.in</a></footer>
+		<footer><a href="http://www.cuelogic.com" target="_blank">Cuelogic.co.in</a>
+<div><a href="/terms">Terms And Condition</a></div>
+		</footer>
 
 		</div>
 	</body>
