@@ -1,7 +1,8 @@
 my:
     resource: "@MyBundle/Resources/config/routing.php"
     prefix:   /
+    type: annotation
 
 app:
-    resource: "@AppBundle/Controller/"
+    resource: "@MyBundle/Controller/"
     type:     annotation

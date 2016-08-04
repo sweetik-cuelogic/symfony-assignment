@@ -34,10 +34,35 @@
 		    text-align: center;
 		    color: white;
 		}
+		#a{color:white;}
 		content {
 		     color:red;
 		     text-align: center;
 		}
+
+		ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
 	   </style>
 	</head>
         <body>
@@ -45,12 +70,17 @@
 
 		<header>
 		   <h1>Hello World Page</h1>
+		   <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#career">Career</a></li>
+  <li><a href="#about">About Us</a></li>
+</ul>
 		</header>
 		<div class="content">
 			{% block body %}{% endblock %}
 			{% block javascripts %}{% endblock %}
 		</div>
-		<footer>Cuelogic.co.in</footer>
+		<footer><a href="http://www.cuelogic.com" target="_blank">Cuelogic.co.in</a></footer>
 
 		</div>
 	</body>
